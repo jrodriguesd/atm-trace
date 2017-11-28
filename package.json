@@ -1,6 +1,6 @@
 {
   "name": "atm-trace",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ATM Trace Service - a library to display binary data",
   "main": "lib/trace.js",
   "scripts": {

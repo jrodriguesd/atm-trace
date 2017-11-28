@@ -63,4 +63,25 @@ test('should trace string with new line character unchanged', t => {
   t.is(trace.object(obj), '\n  [data]: [iddqd\npqrst]\n');
 });
  
+/**
+ * object()
+ */
+test('should trace the Map() object', t => {
+  let parsed = new Map();
+
+  parsed.set('description','PreSet Operation Code Buffer');
+  parsed.set('number', '003');
+  parsed.set('type', 'D');
+  parsed.set('next_state', '024');
+  parsed.set('clear_mask', '000');
+  parsed.set('A_preset_mask', '128');
+  parsed.set('B_preset_mask', '001');
+  parsed.set('C_preset_mask', '002');
+  parsed.set('D_preset_mask', '003');
+  parsed.set('extension_state', '005');
+  parsed.set('states_to', [ '024' ]);
+
+  t.is(trace.object(parsed), '\n  [description    ]: [PreSet Operation Code Buffer]\n  [number         ]: [003]\n  [type           ]: [D]\n  [next_state     ]: [024]\n  [clear_mask     ]: [000]\n  [A_preset_mask  ]: [128]\n  [B_preset_mask  ]: [001]\n  [C_preset_mask  ]: [002]\n  [D_preset_mask  ]: [003]\n  [extension_state]: [005]\n  [states_to      ]: [024]\n');
+});
+ 
 
