@@ -1,5 +1,12 @@
 import test from 'ava';
 import Trace from '../lib/trace';
+import { JSDOM } from 'jsdom';
+
+const jsdom = new JSDOM('<!doctype html><html><body><pre id="log-output" class="log-output" type="text"></pre></body></html>');
+const { window } = jsdom;
+
+global.window = window;
+global.document = window.document;
 
 const trace = new Trace();
 
