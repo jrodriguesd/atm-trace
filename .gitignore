@@ -1,0 +1,8 @@
+node_modules
+coverage
+dist/
+package-lock.json
+*.tgz
+*.lock
+*.swp
+*.log
