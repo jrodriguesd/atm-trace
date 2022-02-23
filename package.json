@@ -36,7 +36,7 @@
     "eslint-plugin-import": "^2.8.0"
   },
   "dependencies": {
-    "atm-logging": "^0.1.4",
+    "atm-logging": "git://github.com/jrodriguesd/atm-logging",
     "atm-timestamp": "^1.1.1"
  }
 }
