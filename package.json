@@ -37,6 +37,5 @@
   },
   "dependencies": {
     "atm-logging": "git://github.com/jrodriguesd/atm-logging",
-    "atm-timestamp": "^1.1.1"
  }
 }
